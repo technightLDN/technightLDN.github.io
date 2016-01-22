@@ -1,0 +1,24 @@
+div.main {
+	height: 100vh;
+	background:
+	linear-gradient(
+      rgba(0, 0, 51, 0.45), 
+      rgba(0, 0, 51, 0.45)
+    ),
+    url("img/background.jpeg") no-repeat center fixed;
+	background-size: cover;
+	color: #FFFFFF;
+}
+
+.main h1 {
+	margin-bottom: 0px;
+}
+
+div.intro {
+	padding: 50px 0;
+}
+
+.main h2 {
+	font-size: 35px;
+	padding-bottom: 70px;
+}
