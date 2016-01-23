@@ -31,7 +31,17 @@ div.intro {
   font-size: 35px;
   padding-bottom: 70px; }
 
+.main h3 {
+  margin-bottom: 1rem; }
+
 div.about {
-  background: #af0000; }
+  background: #9E0039;
+  color: #FFFFFF; }
+
+div.speakers {
+  background: #1B1464; }
+
+div.sponsors {
+  background: #0076A3; }
 
 /*# sourceMappingURL=main.css.map */
