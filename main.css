@@ -1,31 +1,49 @@
 @import url(sass/normalize.css);
 @import url(sass/skeleton.css);
-@import url(https://fonts.googleapis.com/css?family=Ubuntu:400,500);
-@import url(https://fonts.googleapis.com/css?family=Raleway:400,500);
-h1, h2, h3 {
-  font-family: "Raleway", Arial, sans-serif; }
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400,500);
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,500);
+h1, h2, h3, h4 {
+  font-family: "Montserrat", Arial, sans-serif; }
+
+h2, h3, h4 {
+  text-transform: uppercase;
+  letter-spacing: 1px; }
 
 h1 {
   font-weight: 500;
-  font-size: 75px; }
+  font-size: 5em;
+  padding-bottom: 20px; }
 
-body p {
-  font-family: "Ubuntu", Arial, sans-serif; }
+h2 {
+  text-transform: uppercase;
+  padding-bottom: 10px;
+  margin-bottom: 50px;
+  border-bottom: 4px white solid; }
+
+h4 {
+  font-size: 1.25em; }
+
+body {
+  color: #FFFFFF;
+  font-family: "Open Sans", Arial, sans-serif; }
 
 div.section {
-  padding: 100px 150px; }
+  padding: 70px; }
 
 div.main {
-  height: 100vh;
-  background: linear-gradient(rgba(0, 0, 51, 0.45), rgba(0, 0, 51, 0.45)), url("img/background.jpeg") no-repeat center fixed;
-  background-size: cover;
+  height: 80vh;
+  background: url("img/background.jpg"), linear-gradient(45deg, #a0003c, #1e1478, #0078a0, #009678);
+  background-position: 80% center, bottom;
+  background-size: cover, cover;
+  background-blend-mode: multiply;
   color: #FFFFFF; }
 
 .main h1 {
   margin-bottom: 0px; }
 
 div.intro {
-  padding: 50px 0; }
+  margin-top: 20vh;
+  padding: 0; }
 
 .main h2 {
   font-size: 35px;
@@ -39,9 +57,26 @@ div.about {
   color: #FFFFFF; }
 
 div.speakers {
-  background: #1B1464; }
+  background: #1B1464;
+  min-height: 50vh; }
+
+.circle {
+  height: 200px;
+  width: 200px;
+  border-radius: 100px;
+  background-color: white;
+  color: #1B1464;
+  margin: 50px auto; }
+  .circle p {
+    padding-top: 90px;
+    text-align: center; }
 
 div.sponsors {
   background: #0076A3; }
+  div.sponsors p {
+    text-align: center; }
+  div.sponsors img {
+    max-width: 70%;
+    margin: 30px 15%; }
 
 /*# sourceMappingURL=main.css.map */

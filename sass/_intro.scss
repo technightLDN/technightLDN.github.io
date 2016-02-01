@@ -1,12 +1,17 @@
 div.main {
-	height: 100vh;
+	height: 80vh;
 	background:
-	linear-gradient(
-      rgba(0, 0, 51, 0.45), 
-      rgba(0, 0, 51, 0.45)
-    ),
-    url("img/background.jpeg") no-repeat center fixed;
-	background-size: cover;
+		url("img/background.jpg"),
+		linear-gradient(
+			45deg,
+			rgba(160, 0, 60, 1),
+			rgba(30, 20, 120, 1),
+			rgba(0, 120, 160, 1),
+			rgba(0, 150, 120, 1)
+		);
+	background-position: 80% center, bottom;
+	background-size: cover, cover;
+	background-blend-mode: multiply;
 	color: #FFFFFF;
 }
 
@@ -15,7 +20,8 @@ div.main {
 }
 
 div.intro {
-	padding: 50px 0;
+	margin-top:20vh;
+	padding:0;
 }
 
 .main h2 {
