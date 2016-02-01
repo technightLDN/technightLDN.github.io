@@ -1,14 +1,15 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400,500);
-@import url(https://fonts.googleapis.com/css?family=Montserrat:400,500);
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,500);
 
 // variables
 $fontA: 'Open Sans', Arial, sans-serif;
-$fontB: 'Montserrat', Arial, sans-serif;
+$fontB: 'Raleway', Arial, sans-serif;
 
 
 // body vars
 h1, h2, h3, h4 {
 	font-family: $fontB;
+	font-weight: 500;
 }
 
 h2, h3, h4{
@@ -17,7 +18,6 @@ h2, h3, h4{
 }
 
 h1 {
-	font-weight: 500;
 	font-size:5em;
 	padding-bottom: 20px;
 }
@@ -40,6 +40,10 @@ body {
 
 a{
 	color: #FFFFFF;
+}
+
+a:hover {
+	color: $highlight;
 }
 
 div.section {

@@ -1,16 +1,16 @@
 @import url(sass/normalize.css);
 @import url(sass/skeleton.css);
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400,500);
-@import url(https://fonts.googleapis.com/css?family=Montserrat:400,500);
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,500);
 h1, h2, h3, h4 {
-  font-family: "Montserrat", Arial, sans-serif; }
+  font-family: "Raleway", Arial, sans-serif;
+  font-weight: 500; }
 
 h2, h3, h4 {
   text-transform: uppercase;
   letter-spacing: 1px; }
 
 h1 {
-  font-weight: 500;
   font-size: 5em;
   padding-bottom: 20px; }
 
@@ -29,6 +29,9 @@ body {
 
 a {
   color: #FFFFFF; }
+
+a:hover {
+  color: rgba(200, 200, 200, 0.9); }
 
 div.section {
   padding: 70px; }
@@ -63,12 +66,12 @@ div.speakers {
   min-height: 50vh; }
 
 .circle {
-  height: 200px;
-  width: 200px;
-  border-radius: 100px;
-  background-color: white;
-  color: #1e1478;
-  margin: 50px auto; }
+  width: 100%;
+  height: 40vh;
+  border-radius: 25%;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: white;
+  margin: 5rem auto; }
   .circle p {
     padding-top: 90px;
     text-align: center; }
@@ -84,5 +87,16 @@ div.sponsors {
     position: relative;
     top: 50%;
     transform: translateY(-50%); }
+  div.sponsors .row img {
+    max-height: 20vh; }
+  div.sponsors .previous-sponsors {
+    padding: 5rem 0; }
+    div.sponsors .previous-sponsors img {
+      padding: 2rem 1rem; }
+    div.sponsors .previous-sponsors #steer img {
+      height: 8vh; }
+    div.sponsors .previous-sponsors #GIT img {
+      padding-bottom: 0;
+      margin-bottom: 0; }
 
 /*# sourceMappingURL=main.css.map */

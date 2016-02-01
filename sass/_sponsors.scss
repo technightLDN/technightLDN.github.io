@@ -13,9 +13,24 @@ div.sponsors {
   top: 50%;
   transform: translateY(-50%);
 	}
+	.row img {
+		max-height: 20vh;
+	}
 
-	.previous-sponsors{
+	.previous-sponsors {
 		//border: 4px solid white;
-		//padding: 50px 50px 0 50px;
+		padding: 5rem 0;
+
+		img {
+			padding: 2rem 1rem;
+		}
+
+		#steer img {
+			height: 8vh;
+		}
+		#GIT img {
+			padding-bottom: 0;
+			margin-bottom: 0;
+		}
 	}
 }
