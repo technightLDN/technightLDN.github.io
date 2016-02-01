@@ -4,10 +4,10 @@ div.main {
 		url("img/background.jpg"),
 		linear-gradient(
 			45deg,
-			rgba(160, 0, 60, 1),
-			rgba(30, 20, 120, 1),
-			rgba(0, 120, 160, 1),
-			rgba(0, 150, 120, 1)
+			$colorA,
+			$colorB,
+			$colorC,
+			$colorD
 		);
 	background-position: 80% center, bottom;
 	background-size: cover, cover;

@@ -1,13 +1,21 @@
 div.sponsors {
-	background: #0076A3;
+	background: $colorC;
 
 	p{
 		text-align: center;
 	}
-	
 
 	img{
 		max-width:70%;
-		margin: 30px 15% ;
+		margin: 30px 15%;
+		vertical-align:middle;
+		position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+	}
+
+	.previous-sponsors{
+		//border: 4px solid white;
+		//padding: 50px 50px 0 50px;
 	}
 }

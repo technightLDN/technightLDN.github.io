@@ -1,9 +1,5 @@
-//var
-
-$bgColor: #1B1464;
-
 div.speakers {
-	background: $bgColor;
+	background: $colorB;
 	min-height: 50vh;
 }
 
@@ -12,7 +8,7 @@ div.speakers {
 	width:200px;
 	border-radius: 100px;
 	background-color: white;
-	color: $bgColor;
+	color: $colorB;
 	margin: 50px auto;
 
 	p{

@@ -27,6 +27,9 @@ body {
   color: #FFFFFF;
   font-family: "Open Sans", Arial, sans-serif; }
 
+a {
+  color: #FFFFFF; }
+
 div.section {
   padding: 70px; }
 
@@ -53,11 +56,10 @@ div.intro {
   margin-bottom: 1rem; }
 
 div.about {
-  background: #9E0039;
-  color: #FFFFFF; }
+  background: #a0003c; }
 
 div.speakers {
-  background: #1B1464;
+  background: #1e1478;
   min-height: 50vh; }
 
 .circle {
@@ -65,18 +67,22 @@ div.speakers {
   width: 200px;
   border-radius: 100px;
   background-color: white;
-  color: #1B1464;
+  color: #1e1478;
   margin: 50px auto; }
   .circle p {
     padding-top: 90px;
     text-align: center; }
 
 div.sponsors {
-  background: #0076A3; }
+  background: #0078a0; }
   div.sponsors p {
     text-align: center; }
   div.sponsors img {
     max-width: 70%;
-    margin: 30px 15%; }
+    margin: 30px 15%;
+    vertical-align: middle;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%); }
 
 /*# sourceMappingURL=main.css.map */
