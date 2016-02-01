@@ -1,31 +1,55 @@
 @import url(sass/normalize.css);
 @import url(sass/skeleton.css);
-@import url(https://fonts.googleapis.com/css?family=Ubuntu:400,500);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400,500);
 @import url(https://fonts.googleapis.com/css?family=Raleway:400,500);
-h1, h2, h3 {
-  font-family: "Raleway", Arial, sans-serif; }
+h1, h2, h3, h4 {
+  font-family: "Raleway", Arial, sans-serif;
+  font-weight: 500; }
+
+h2, h3, h4 {
+  text-transform: uppercase;
+  letter-spacing: 1px; }
 
 h1 {
-  font-weight: 500;
-  font-size: 75px; }
+  font-size: 5em;
+  padding-bottom: 20px; }
 
-body p {
-  font-family: "Ubuntu", Arial, sans-serif; }
+h2 {
+  text-transform: uppercase;
+  padding-bottom: 10px;
+  margin-bottom: 50px;
+  border-bottom: 4px white solid; }
+
+h4 {
+  font-size: 1.25em; }
+
+body {
+  color: #FFFFFF;
+  font-family: "Open Sans", Arial, sans-serif; }
+
+a {
+  color: #FFFFFF; }
+
+a:hover {
+  color: rgba(210, 210, 210, 0.9); }
 
 div.section {
-  padding: 100px 150px; }
+  padding: 70px; }
 
 div.main {
-  height: 100vh;
-  background: linear-gradient(rgba(0, 0, 51, 0.45), rgba(0, 0, 51, 0.45)), url("img/background.jpeg") no-repeat center fixed;
-  background-size: cover;
+  height: 80vh;
+  background: url("img/background.jpg"), linear-gradient(45deg, #a0003c, #1e1478, #0078a0, #009678);
+  background-position: 80% center, bottom;
+  background-size: cover, cover;
+  background-blend-mode: multiply;
   color: #FFFFFF; }
 
 .main h1 {
   margin-bottom: 0px; }
 
 div.intro {
-  padding: 50px 0; }
+  margin-top: 20vh;
+  padding: 0; }
 
 .main h2 {
   font-size: 35px;
@@ -35,13 +59,44 @@ div.intro {
   margin-bottom: 1rem; }
 
 div.about {
-  background: #9E0039;
-  color: #FFFFFF; }
+  background: #a0003c; }
 
 div.speakers {
-  background: #1B1464; }
+  background: #1e1478;
+  min-height: 50vh; }
+
+.circle {
+  width: 100%;
+  height: 40vh;
+  border-radius: 25%;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: white;
+  margin: 5rem auto; }
+  .circle p {
+    padding-top: 90px;
+    text-align: center; }
 
 div.sponsors {
-  background: #0076A3; }
+  background: #0078a0; }
+  div.sponsors p {
+    text-align: center; }
+  div.sponsors img {
+    max-width: 70%;
+    margin: 30px 15%;
+    vertical-align: middle;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%); }
+  div.sponsors .row img {
+    max-height: 20vh; }
+  div.sponsors .previous-sponsors {
+    padding: 5rem 0; }
+    div.sponsors .previous-sponsors img {
+      padding: 2rem 1rem; }
+    div.sponsors .previous-sponsors #steer img {
+      height: 6vh; }
+    div.sponsors .previous-sponsors #GIT img {
+      padding-bottom: 0;
+      margin-bottom: 0; }
 
 /*# sourceMappingURL=main.css.map */

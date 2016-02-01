@@ -1,3 +1,36 @@
 div.sponsors {
-	background: #0076A3;
+	background: $colorC;
+
+	p{
+		text-align: center;
+	}
+
+	img{
+		max-width:70%;
+		margin: 30px 15%;
+		vertical-align:middle;
+		position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+	}
+	.row img {
+		max-height: 20vh;
+	}
+
+	.previous-sponsors {
+		//border: 4px solid white;
+		padding: 5rem 0;
+
+		img {
+			padding: 2rem 1rem;
+		}
+
+		#steer img {
+			height: 6vh;
+		}
+		#GIT img {
+			padding-bottom: 0;
+			margin-bottom: 0;
+		}
+	}
 }
