@@ -31,7 +31,7 @@ a {
   color: #FFFFFF; }
 
 a:hover {
-  color: rgba(200, 200, 200, 0.9); }
+  color: rgba(210, 210, 210, 0.9); }
 
 div.section {
   padding: 70px; }
@@ -94,7 +94,7 @@ div.sponsors {
     div.sponsors .previous-sponsors img {
       padding: 2rem 1rem; }
     div.sponsors .previous-sponsors #steer img {
-      height: 8vh; }
+      height: 6vh; }
     div.sponsors .previous-sponsors #GIT img {
       padding-bottom: 0;
       margin-bottom: 0; }
