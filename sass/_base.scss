@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400,500);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:200,300,400,500);
 @import url(https://fonts.googleapis.com/css?family=Raleway:400,500);
 
 // variables
@@ -7,7 +7,7 @@ $fontB: 'Raleway', Arial, sans-serif;
 
 
 // body vars
-h1, h2, h3, h4 {
+h1, h2, h3, h4, h5 {
 	font-family: $fontB;
 	font-weight: 500;
 }
@@ -18,7 +18,7 @@ h2, h3, h4{
 }
 
 h1 {
-	font-size:5em;
+	font-size:8vw;
 	padding-bottom: 20px;
 }
 
@@ -27,10 +27,6 @@ h2{
 	padding-bottom: 10px;
 	margin-bottom: 50px;
 	border-bottom: 4px white solid;
-}
-
-h4{
-	font-size: 1.25em;
 }
 
 body {
@@ -48,5 +44,11 @@ a:hover {
 
 div.section {
 	padding: 70px;
+}
 
+.footer{
+	text-align: center;
+	background-color: black;
+	font-weight:200;
+	padding:10px;
 }

@@ -1,8 +1,8 @@
 @import url(sass/normalize.css);
 @import url(sass/skeleton.css);
-@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400,500);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:200,300,400,500);
 @import url(https://fonts.googleapis.com/css?family=Raleway:400,500);
-h1, h2, h3, h4 {
+h1, h2, h3, h4, h5 {
   font-family: "Raleway", Arial, sans-serif;
   font-weight: 500; }
 
@@ -11,7 +11,7 @@ h2, h3, h4 {
   letter-spacing: 1px; }
 
 h1 {
-  font-size: 5em;
+  font-size: 8vw;
   padding-bottom: 20px; }
 
 h2 {
@@ -19,9 +19,6 @@ h2 {
   padding-bottom: 10px;
   margin-bottom: 50px;
   border-bottom: 4px white solid; }
-
-h4 {
-  font-size: 1.25em; }
 
 body {
   color: #FFFFFF;
@@ -35,6 +32,12 @@ a:hover {
 
 div.section {
   padding: 70px; }
+
+.footer {
+  text-align: center;
+  background-color: black;
+  font-weight: 200;
+  padding: 10px; }
 
 div.main {
   height: 80vh;
@@ -73,30 +76,28 @@ div.speakers {
   color: white;
   margin: 5rem auto; }
   .circle p {
-    padding-top: 90px;
+    padding-top: 17.5vh;
     text-align: center; }
 
 div.sponsors {
-  background: #0078a0; }
+  background: #0078a0;
+  padding-bottom: 30px; }
   div.sponsors p {
     text-align: center; }
-  div.sponsors img {
-    max-width: 70%;
-    margin: 30px 15%;
-    vertical-align: middle;
+  div.sponsors .previous-sponsors .frame {
+    width: 100%;
+    height: 100px;
     position: relative;
-    top: 50%;
-    transform: translateY(-50%); }
-  div.sponsors .row img {
-    max-height: 20vh; }
-  div.sponsors .previous-sponsors {
-    padding: 5rem 0; }
-    div.sponsors .previous-sponsors img {
-      padding: 2rem 1rem; }
-    div.sponsors .previous-sponsors #steer img {
-      height: 6vh; }
-    div.sponsors .previous-sponsors #GIT img {
-      padding-bottom: 0;
-      margin-bottom: 0; }
+    margin: 1rem 0; }
+  div.sponsors .previous-sponsors img {
+    display: block;
+    max-height: 100%;
+    max-width: 70%;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    position: absolute; }
 
 /*# sourceMappingURL=main.css.map */
