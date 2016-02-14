@@ -1,13 +1,55 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:200,300,400,500);
 @import url(https://fonts.googleapis.com/css?family=Raleway:400,500);
 
+@include skel-breakpoints((
+		wide: '(max-width: 1680px)',
+		normal: '(max-width: 1280px)',
+		narrow: '(max-width: 980px)',
+		narrower: '(max-width: 840px)',
+		mobile: '(max-width: 736px)',
+		mobilep: '(max-width: 480px)'
+	));
+
+@include skel-layout((
+		boxModel: 'border',
+		grid: ( gutters: (30px, 30px) ),
+		conditionals: true,
+		containers: 51em,
+		breakpoints: (
+			normal: (
+				containers: 48em,
+			),
+			narrow: (
+				containers: 95%,
+				grid: (
+					gutters: (30px, 30px)
+				),
+			),
+			narrower: (
+				containers: (95%, true),
+				grid: (
+					gutters: (20px, 20px)
+				),
+			),
+			mobile: (
+				containers: (90%, true),
+				grid: (
+					gutters: (20px, 20px)
+				),
+			),
+			mobilep: (
+				containers: (100%, true),
+			)
+		)
+	));
+
 // variables
 $fontA: 'Open Sans', Arial, sans-serif;
 $fontB: 'Raleway', Arial, sans-serif;
 
 
 // body vars
-h1, h2, h3, h4, h5 {
+h1, h2, h3, h4, h5, h6{
 	font-family: $fontB;
 	font-weight: 500;
 }
@@ -18,20 +60,38 @@ h2, h3, h4{
 }
 
 h1 {
-	font-size:8vw;
-	padding-bottom: 20px;
+	font-size: 6vw;
+	//text-transform: uppercase;
+	margin: 0;
+	font-family:"Silkscreen";
 }
 
 h2{
+	font-size: 2.5em;
 	text-transform: uppercase;
 	padding-bottom: 10px;
-	margin-bottom: 50px;
+	margin: 0 0 40px 0;
 	border-bottom: 4px white solid;
+}
+
+h3{
+	font-size: 1.5em;
+}
+
+h4, h5{
+	font-size: 1.25em;
+	margin: 0;
+}
+
+h6{
+	font-size: 1.25em;
+	margin: 0;
 }
 
 body {
 	color: #FFFFFF;
 	font-family: $fontA;
+	font-weight: 300;
 }
 
 a{
@@ -42,7 +102,7 @@ a:hover {
 	color: $highlight;
 }
 
-div.section {
+.section {
 	padding: 70px;
 }
 
@@ -51,4 +111,53 @@ div.section {
 	background-color: black;
 	font-weight:200;
 	padding:10px;
+}
+
+.frame{
+	width:100%;
+	min-height: 120px;
+	max-height: 150px;
+	position: relative;
+	margin: 0;
+
+	img {
+		display: block;
+		max-height:100%;
+		max-width: 100%;
+		top: 0;  
+		bottom: 0;  
+		left: 0;  
+		right: 0;  
+		margin: auto;
+		position:absolute;
+	}
+}
+
+@include breakpoint(mobile) {
+
+	.section{
+		padding: 40px 20px;
+	}
+	h1{
+		font-size:50px;
+		text-align: center;
+
+	}
+	h2{
+		margin: 0 0 20px 0;
+	}
+
+	h4{
+		margin-top:20px;
+	}
+
+	div.row{
+		margin: 0!important;
+		padding: 0;
+	}
+	.frame{
+		min-height: 90px;
+	}
+	
+
 }
