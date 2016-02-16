@@ -1,18 +1,35 @@
 div.speakers {
 	background: $colorB;
 	min-height: 50vh;
-}
 
-.circle{
-	width:100%;
-	height: 40vh;
-	border-radius: 25%;
-	background-color: rgba(255,255,255,0.1);
-	color: white;
-	margin: 5rem auto;
-
-	p{
-		padding-top:17.5vh;
-		text-align: center;
+	h4{
+		margin: 0 1rem 0 0;
 	}
+
+	h6{
+		padding-bottom: 1rem;
+		border-bottom: white 4px solid;
+	}
+
+	.circle{
+		width:350px;
+		margin:auto;
+		display: block;
+		max-width: 100%;
+		border-radius: 25%;
+		background-color: rgba(255,255,255,0.1);
+		color: white;
+
+		p{
+			padding-top:17.5vh;
+			text-align: center;
+		}
+	}
+
+	.row{
+		border-bottom: 4px solid white;
+		padding-bottom: 20px;
+		margin-bottom: 20px;
+	}
+
 }
