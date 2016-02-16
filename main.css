@@ -1434,8 +1434,7 @@ div.main {
   color: #FFFFFF; }
   div.main .tnlogo {
     width: 350px;
-    max-width: 100%;
-    display: block; }
+    max-width: 100%; }
   div.main h1 {
     margin-top: 20vh;
     margin-bottom: 0px;
@@ -1448,7 +1447,8 @@ div.main {
   div.main .row {
     display: flex;
     flex-wrap: wrap;
-    align-items: center; }
+    align-items: center;
+    margin-top: 10vh; }
 
 div.intro {
   padding: 0; }
@@ -1461,9 +1461,9 @@ div.intro {
   text-align: center; }
 
 @media screen and (max-width: 980px) {
-  .row, .row > * {
-    display: block;
-    width: 100%; }
+  .row {
+    margin: 0px !important;
+    padding: 0px !important; }
 
   .main h1, .main h3, .main h4 {
     text-align: center; }

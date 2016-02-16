@@ -17,7 +17,6 @@ div.main {
 	.tnlogo{
 		width:350px;
 		max-width:100%;
-		display: block;
 	}
 
 
@@ -40,6 +39,7 @@ div.main {
 		display: flex;
 		flex-wrap:wrap;
 	    align-items: center;
+	    margin-top:10vh;
 	}
 }
 
@@ -57,10 +57,10 @@ div.intro {
 
 @include breakpoint(narrow) {
 
-.row, .row > *{
-		display: block;
-		width:100%;
-}
+	.row{
+		margin:0px!important;
+		padding:0px!important;
+	}
 
 	.main {
 		h1, h3, h4, {
@@ -69,8 +69,8 @@ div.intro {
 		
 	}
 	h1{
-			font-size: 8vw;
-			}
+		font-size: 8vw;
+		}
 
 	.addeventatc {
 		width:200px;
@@ -89,9 +89,9 @@ div.intro {
 
 @include breakpoint(mobilep) {
 	h1{
-			font-size: 9vw;
-			}
-			h3{
-			font-size: 6vw;
-			}
+		font-size: 9vw;
+	}
+	h3{
+		font-size: 6vw;
+	}
 }
