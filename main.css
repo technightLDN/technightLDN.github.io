@@ -1432,9 +1432,9 @@ div.main {
   background-size: cover, cover;
   background-blend-mode: multiply;
   color: #FFFFFF; }
-  div.main img {
-    width: 400px;
-    margin: 0 auto;
+  div.main .tnlogo {
+    width: 350px;
+    max-width: 100%;
     display: block; }
   div.main h1 {
     margin-top: 20vh;
@@ -1445,6 +1445,10 @@ div.main {
     padding-bottom: 70px; }
   div.main h3 {
     margin-bottom: 1rem; }
+  div.main .row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center; }
 
 div.intro {
   padding: 0; }
@@ -1456,7 +1460,11 @@ div.intro {
   display: block !important;
   text-align: center; }
 
-@media screen and (max-width: 736px) {
+@media screen and (max-width: 980px) {
+  .row, .row > * {
+    display: block;
+    width: 100%; }
+
   .main h1, .main h3, .main h4 {
     text-align: center; }
 
@@ -1467,7 +1475,13 @@ div.intro {
     width: 200px;
     display: block !important;
     text-align: center;
-    margin: 20px auto; } }
+    margin: 20px auto; }
+
+  .tnlogo {
+    width: 450px;
+    max-width: 100%;
+    margin: 0 auto;
+    display: block; } }
 @media screen and (max-width: 480px) {
   h1 {
     font-size: 9vw; }
@@ -1502,8 +1516,7 @@ div.speakers {
     margin-bottom: 20px; }
 
 div.sponsors {
-  background: #0078a0;
-  padding-bottom: 30px; }
+  background: #0078a0; }
   div.sponsors p {
     text-align: center; }
   div.sponsors .row {
