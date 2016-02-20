@@ -1,5 +1,8 @@
-# technightLDN.github.io
-lol
+# Tech Night LDN website
 
-Photo source: https://www.flickr.com/photos/jleeworks/22272018248/
-Attribution CC License, so add photo credit link to page and acknowledge it is altered.
+###The offical repo for the [Tech Night LDN website](http://technight.london)!
+
+(You should totally come to the event.)
+
+* Photo source for background.jpg: https://www.flickr.com/photos/jleeworks/22272018248/
+* Photo credit: [XLPeabrain](https://www.flickr.com/photos/jleeworks/) on Flickr
