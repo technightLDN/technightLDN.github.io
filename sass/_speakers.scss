@@ -3,7 +3,7 @@ div.speakers {
 	min-height: 50vh;
 
 	h4{
-		margin: 0 1rem 0 0;
+		//margin: 0 1rem 0 0;
 	}
 
 	h6{
@@ -12,13 +12,14 @@ div.speakers {
 	}
 
 	.circle{
-		width:350px;
+		width:320px;
 		margin:auto;
 		display: block;
 		max-width: 100%;
 		border-radius: 25%;
 		background-color: rgba(255,255,255,0.1);
 		color: white;
+		margin-bottom:1rem;
 
 		p{
 			padding-top:17.5vh;
@@ -32,4 +33,15 @@ div.speakers {
 		margin-bottom: 20px;
 	}
 
+
+@include breakpoint(mobile) {
+
+	h4{
+		margin:0;
+	}
+	
+
 }
+
+}
+

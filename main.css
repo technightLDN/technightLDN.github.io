@@ -1491,22 +1491,62 @@ div.intro {
 div.about {
   background: #a0003c; }
 
+/* Table */
+.table-wrapper {
+  -webkit-overflow-scrolling: touch;
+  overflow-x: auto; }
+
+table {
+  margin: 0 0 _size(element-margin) 0;
+  width: 100%; }
+  table tbody tr {
+    border: 0.25em white;
+    border-left: 0;
+    border-right: 0; }
+    table tbody tr:nth-child(2n + 1) {
+      background-color: rgba(255, 255, 255, 0.1); }
+  table td {
+    padding: 0.75em 0.75em; }
+  table th {
+    color: white;
+    font-size: 1em;
+    font-weight: 400;
+    padding: 0 0.75em 0.75em 0.75em;
+    text-align: left; }
+  table thead {
+    border-bottom: solid 0.5em white; }
+  table tfoot {
+    border-top: white; }
+  table.alt {
+    border-collapse: separate; }
+    table.alt tbody tr td {
+      border: solid 0.25em white;
+      border-left-width: 0;
+      border-top-width: 0; }
+      table.alt tbody tr td:first-child {
+        border-left-width: 0.25em; }
+    table.alt tbody tr:first-child td {
+      border-top-width: 0.25em; }
+    table.alt thead {
+      border-bottom: 0; }
+    table.alt tfoot {
+      border-top: 0; }
+
 div.speakers {
   background: #1e1478;
   min-height: 50vh; }
-  div.speakers h4 {
-    margin: 0 1rem 0 0; }
   div.speakers h6 {
     padding-bottom: 1rem;
     border-bottom: white 4px solid; }
   div.speakers .circle {
-    width: 350px;
+    width: 320px;
     margin: auto;
     display: block;
     max-width: 100%;
     border-radius: 25%;
     background-color: rgba(255, 255, 255, 0.1);
-    color: white; }
+    color: white;
+    margin-bottom: 1rem; }
     div.speakers .circle p {
       padding-top: 17.5vh;
       text-align: center; }
@@ -1514,6 +1554,9 @@ div.speakers {
     border-bottom: 4px solid white;
     padding-bottom: 20px;
     margin-bottom: 20px; }
+  @media screen and (max-width: 736px) {
+    div.speakers h4 {
+      margin: 0; } }
 
 div.tickets {
   color: black; }
@@ -1549,8 +1592,11 @@ div.button a:hover {
 #eventbrite iframe {
   overflow: hidden; }
 
-div.sponsors {
+div.schedule {
   background: #0078a0; }
+
+div.sponsors {
+  background: #009678; }
   div.sponsors p {
     text-align: center; }
   div.sponsors .row {
