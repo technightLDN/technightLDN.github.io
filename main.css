@@ -1589,6 +1589,11 @@ div.button a:hover {
   font-size: 12px;
   padding: 0 28px; }
 
+a.small {
+  text-decoration: none;
+  font-size: 0.9em;
+}
+
 #eventbrite iframe {
   overflow: hidden; }
 
