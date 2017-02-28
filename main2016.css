@@ -1427,7 +1427,7 @@ a:hover {
     min-height: 90px; } }
 div.main {
   min-height: 100vh;
-  background: url("img/background.png");
+  background: url("img/2016/background.jpg"), linear-gradient(45deg, #a0003c, #1e1478, #0078a0, #009678);
   background-position: 80% center, bottom;
   background-size: cover, cover;
   background-blend-mode: multiply;
@@ -1489,7 +1489,7 @@ div.intro {
   h3 {
     font-size: 6vw; } }
 div.about {
-  background: #B207B7; }
+  background: #a0003c; }
 
 /* Table */
 .table-wrapper {
@@ -1533,7 +1533,7 @@ table {
       border-top: 0; }
 
 div.speakers {
-  background: #5F4ADD;
+  background: #1e1478;
   min-height: 50vh; }
   div.speakers h6 {
     padding-bottom: 1rem;
@@ -1598,7 +1598,7 @@ a.small {
   overflow: hidden; }
 
 div.schedule {
-  background: #0839C1; }
+  background: #0078a0; }
 
 div.sponsors {
   background: #009678; }
